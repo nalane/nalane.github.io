@@ -2,107 +2,120 @@
 <html lang="en">
 
 <head>
-    <title>Nathaniel Lane's Personal Page</title>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <title>Nathaniel Lane's Personal Page</title>
 </head>
 
 <body>
+    <div class="container">
+        <div id="banner" class="row">
+            <img src="image1.png" id="fst_image"></img>
+        </div>
+        
+        <div class="row">
+            <nav id="nav_bar" class="col-3">
+                <div class="row"><a href="/index.html" class="text">Home</a></div>
+                <div class="row"><a href="/bio.html" class="text">Bio</a></div>
+                <div class="row"><a href="/professional.html" class="text">Professional Work</a></div>
+                <div class="row"><a href="contact.html" class="text">Contact</a></div>
+            </nav> 
+            
+            <div id="main" class="col">
+                <h1 class="text">Professional History</h1>
 
-<div id="banner">
-    <img src="image1.png" id="fst_image"></img>
-</div>
+                <h2 class="text">Education</h2>
+                <dl>
+                    <dt><b class="text">Colorado School of Mines</b><span class="text">: Aug. 2012 - May 2015</span></dt>
+                    <dd><span class="text">Bachelor's of Science in Computer Science, GPA 3.955, </span><i class="text">summa cum laude</i></dd>
 
-<nav id="nav_bar">
-    <a href="/index.html" class="text">Home</a>
-    <a href="/bio.html" class="text">Bio</a>
-    <a href="/professional.html" class="text">Professional Work</a>
-    <a href="contact.html" class="text">Contact</a>
-</nav> 
+                    <dt><b class="text">Montana State University</b><span class="text">: Jan. 2019 - May 2020</span></dt>
+                    <dd class="text">Master's of Science in Computer Science, GPA 4.0</dd>
 
-<div id="main">
-<h1 class="text">Professional History</h1>
+                    <dt><b class="text">Montana State University</b><span class="text">: Aug. 2020 - </span></dt>
+                    <dd class="text">Doctorate of Science in Computer Science, GPA 4.0 (in progress)</dd>
+                </dl>
 
-<h2 class="text">Education</h2>
-<dl>
-    <dt><b class="text">Colorado School of Mines</b><span class="text">: Aug. 2012 - May 2015</span></dt>
-    <dd><span class="text">Bachelor's of Science in Computer Science, GPA 3.955, </span><i class="text">summa cum laude</i></dd>
+                <h2 class="text">Publications</h2>
+                <ul>
+                    <li>
+                        <span class="text">N. Lane and I. Kahanda, "DeepACPpred: A Novel Hybrid CNN-RNN Architecture for Predicting Anti-Cancer Peptides."</span> 
+                        <i class="text">International Conference on Practical Applications of Computational Biology & Bioinformatics</i><span class="text">, 2020.
+                        Accepted, Pending publication.</span>
+                    </li>
+                </ul>
 
-    <dt><b class="text">Montana State University</b><span class="text">: Jan. 2019 - May 2020</span></dt>
-    <dd class="text">Master's of Science in Computer Science, GPA 4.0</dd>
+                <h2 class="text">Relevant Work History</h2>
+                <dl>
+                    <dt class="text">Jul. 2014 - Dec. 2014: Consultant at Data Verity</dt>
+                    <dd class="text">Created a new interface for Lon-Capa, the online homework system for the Physics department at Mines.</dd>
 
-    <dt><b class="text">Montana State University</b><span class="text">: Aug. 2020 - </span></dt>
-    <dd class="text">Doctorate of Science in Computer Science, GPA 4.0 (in progress)</dd>
-</dl>
+                    <dt class="text">May 2015 - Aug. 2015: Internship at Seagate</dt>
+                    <dd class="text">Created a system to track the results of physical tests on hard drives.</dd>
 
-<h2 class="text">Publications</h2>
-<ul>
-    <li>
-        <span class="text">N. Lane and I. Kahanda, "DeepACPpred: A Novel Hybrid CNN-RNN Architecture for Predicting Anti-Cancer Peptides."</span> 
-        <i class="text">International Conference on Practical Applications of Computational Biology & Bioinformatics</i><span class="text">, 2020.
-        Accepted, Pending publication.</span>
-    </li>
-</ul>
+                    <dt class="text">Nov. 2016 - Jul. 2017: Software Engineer at Solute, Inc.</dt>
+                    <dd class="text">Worked at Lockheed Martin through Solute, a military-focused consulting firm.</dd>
+                </dl>
 
-<h2 class="text">Relevant Work History</h2>
-<dl>
-    <dt class="text">Jul. 2014 - Dec. 2014: Consultant at Data Verity</dt>
-    <dd class="text">Created a new interface for Lon-Capa, the online homework system for the Physics department at Mines.</dd>
+                <p class="text">
+                    It is worth noting that there are gaps in my history. Each of these was caused by my parents' cancers: I left Data Verity after my mother's 
+                    cancer was found to be terminal (though I did continue my studies at Colorado School of Mines), and I left Solute, Inc. after my father died 
+                    so that I could manage his estate and eventually move to Bozeman to be close to family. Frankly, I primarily took the time from May 2017, 
+                    when my father died, to January 2019, when I resumed my graduate studies at Montana State University, to grieve and reassess my goals.
+                </p>
 
-    <dt class="text">May 2015 - Aug. 2015: Internship at Seagate</dt>
-    <dd class="text">Created a system to track the results of physical tests on hard drives.</dd>
+                <h2 class="text">Skills</h2>
+                <ul>
+                    <li class="text">Favorite languages: C, C++, Haskell, Python</li>
+                    <li class="text">Familiar languages: Java, Matlab, Javascript, Ruby, Perl, C#, Rust, PHP</li>
+                    <li class="text">Tools and frameworks: Tensorflow, Scikit Learn, OpenGL, Vulkan, Rails</li>
+                </ul>
 
-    <dt class="text">Nov. 2016 - Jul. 2017: Software Engineer at Solute, Inc.</dt>
-    <dd class="text">Worked at Lockheed Martin through Solute, a military-focused consulting firm.</dd>
-</dl>
+                <h2 class="text">Projects</h2>
+                <dl>
+                    <dt class="text">DeepACPpred</dt>
+                    <dd class="text">
+                        My Master's thesis project. I created a hybrid recurrent neural network(RNN) and convolutional neural network (CNN) system in Tensorflow 
+                        to predict if a given amino acid sequence represented an anti-cancer peptide (ACP). Subject of the paper "DeepACPpred: A Novel Hybrid CNN-RNN 
+                        Architecture for Predicting Anti-Cancer Peptides," listed above.
+                    </dd>
+                    <dd><a href=https://github.com/nalane/DeepACPpred class="text" target="_blank">Github link</a></dd>
+                    <dd>&nbsp;</dd>
 
-<p class="text">
-    It is worth noting that there are gaps in my history. Each of these was caused by my parents' cancers: I left Data Verity after my mother's 
-    cancer was found to be terminal (though I did continue my studies at Colorado School of Mines), and I left Solute, Inc. after my father died 
-    so that I could manage his estate and eventually move to Bozeman to be close to family. Frankly, I primarily took the time from May 2017, 
-    when my father died, to January 2019, when I resumed my graduate studies at Montana State University, to grieve and reassess my goals.
-</p>
+                    <dt class="text">Fey Game Engine</dt>
+                    <dd class="text">
+                        A game engine written in C++. Utilizes both OpenGL and Vulkan. Mostly not in progress any more. Ultimately, I consider this project to have
+                        failed. The biggest lesson that I learned from this project is that while abstraction is a powerful tool, too much of it can make remembering how
+                        everything works difficult, since important implementation details are often hidden under layers upon layers of abstraction. Also, I got distracted
+                        by the Haskell version of the engine.
+                    </dd>
+                    <dd><a href=https://github.com/nalane/fey class="text" target="_blank">Github link</a></dd>
+                    <dd>&nbsp;</dd>
 
-<h2 class="text">Skills</h2>
-<ul>
-    <li class="text">Favorite languages: C, C++, Haskell, Python</li>
-    <li class="text">Familiar languages: Java, Matlab, Javascript, Ruby, Perl, C#, Rust, PHP</li>
-    <li class="text">Tools and frameworks: Tensorflow, Scikit Learn, OpenGL, Vulkan, Rails</li>
-</ul>
+                    <dt class="text">HaskFey Game Engine</dt>
+                    <dd class="text">
+                        A game engine written in Haskell. Haskell is a beautiful mess of a language, and I love it. I wanted to see how well Haskell works on a large-scale
+                        project, and so I decided to test it out with a game engine. Thus far, I have learned a lot about Haskell and how it works, and I am excited to
+                        keep this project alive.
+                    </dd>
+                    <dd><a href=https://github.com/nalane/haskfey class="text" target="_blank">Github link</a></dd>
+                    <dd>&nbsp;</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 
-<h2 class="text">Projects</h2>
-<dl>
-    <dt class="text">DeepACPpred</dt>
-    <dd class="text">
-        My Master's thesis project. I created a hybrid recurrent neural network(RNN) and convolutional neural network (CNN) system in Tensorflow 
-        to predict if a given amino acid sequence represented an anti-cancer peptide (ACP). Subject of the paper "DeepACPpred: A Novel Hybrid CNN-RNN 
-        Architecture for Predicting Anti-Cancer Peptides," listed above.
-    </dd>
-    <dd><a href=https://github.com/nalane/DeepACPpred class="text" target="_blank">Github link</a></dd>
-    <dd>&nbsp;</dd>
-
-    <dt class="text">Fey Game Engine</dt>
-    <dd class="text">
-        A game engine written in C++. Utilizes both OpenGL and Vulkan. Mostly not in progress any more. Ultimately, I consider this project to have
-        failed. The biggest lesson that I learned from this project is that while abstraction is a powerful tool, too much of it can make remembering how
-        everything works difficult, since important implementation details are often hidden under layers upon layers of abstraction. Also, I got distracted
-        by the Haskell version of the engine.
-    </dd>
-    <dd><a href=https://github.com/nalane/fey class="text" target="_blank">Github link</a></dd>
-    <dd>&nbsp;</dd>
-
-    <dt class="text">HaskFey Game Engine</dt>
-    <dd class="text">
-        A game engine written in Haskell. Haskell is a beautiful mess of a language, and I love it. I wanted to see how well Haskell works on a large-scale
-        project, and so I decided to test it out with a game engine. Thus far, I have learned a lot about Haskell and how it works, and I am excited to
-        keep this project alive.
-    </dd>
-    <dd><a href=https://github.com/nalane/haskfey class="text" target="_blank">Github link</a></dd>
-    <dd>&nbsp;</dd>
-</dl>
-</div>
-
-<script src="text.js"></script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="text.js"></script>
 </body>
 </html>
