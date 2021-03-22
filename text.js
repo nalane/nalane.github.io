@@ -88,9 +88,15 @@ function animate(elem) {
 
 // Get all elements with text
 const texts = document.getElementsByClassName("text");
+const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
 // Make all letters spans
 for (let text of texts) {
+    // Ensure that navbar links don't disappear on mobile
+    if (width <= 576 && text.classList.contains("navlink")) {
+        continue;
+    }
+
     const str = text.innerHTML;
     text.innerHTML = "";
 
