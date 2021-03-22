@@ -46,6 +46,11 @@ function animate(elem) {
     const mass = rect.height * rect.width;
     const pos = Number(window.innerHeight - rect.bottom);
 
+    // Characters that don't have mass won't drop, so return
+    if (mass == 0) {
+        return;
+    }
+
     // Fix the letter to where it is now.
     elem.style["line-height"] = "normal";
     elem.style.bottom = pos + "px";
@@ -54,19 +59,34 @@ function animate(elem) {
     // Give it a whimsical bump up.
     elem.setAttribute('vel', -mass / 200 * Math.random());
 
+    bounces = 0;
+
     var animTimer = setInterval(function () {
         // Recalculate position
         const rect = elem.getBoundingClientRect();
         const pos = Number(window.innerHeight - rect.bottom);
-        if (pos <= 0) {
-            clearInterval(animTimer);
+        vel = Number(elem.getAttribute('vel'));
+
+        // If it hits the bottom of the screen, bounce or end
+        if (pos <= 0.001) {
+            vel *= -0.25;
+            bounces += 1;
+            if (Math.abs(vel) <= 0.01 || bounces >= 5) {
+                console.log("Dropping");
+                clearInterval(animTimer);
+            }
+            else {
+                console.log("Bouncing " + bounces);
+            }
+        }
+        else {
+            console.log(pos);
         }
 
         // Move it
-        const vel = elem.getAttribute('vel');
         const newPos = Math.max(pos - vel, 0);
         elem.style.bottom = newPos + "px";
-        elem.setAttribute('vel', Number(vel) + mass / 2500); // Bigger elements fall faster to give the illusion of weight
+        elem.setAttribute('vel', vel + mass / 2500); // Bigger elements fall faster to give the illusion of weight
     }, 10);
 }
 
