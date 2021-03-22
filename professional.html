@@ -15,23 +15,32 @@
 
 <body>
     <div class="container">
-        <div id="banner" class="row">
+        <div id="banner" class="row d-none d-md-block">
             <img src="image1.png" id="fst_image"></img>
         </div>
         
-        <div class="row">
-            <nav id="nav_bar" class="col-3">
-                <div class="row"><a href="/index.html" class="text">Home</a></div>
-                <div class="row"><a href="/bio.html" class="text">Bio</a></div>
-                <div class="row"><a href="/professional.html" class="text">Professional Work</a></div>
-                <div class="row"><a href="contact.html" class="text">Contact</a></div>
-            </nav> 
+        <nav id="nav_bar" class="row navbar-light navbar-expand-md">
+            <button class="navbar-toggler row" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!--span class="navbar-toggler-icon col-xs-1"></span-->
+                <img src="image1.png" id="fst_image" class="d-md-none col-xs-11"></img>
+            </button>
             
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item"><a href="index.html" class="text">Home</a></li>
+                    <li class="nav-item"><a href="bio.html" class="text">Bio</a></li>
+                    <li class="nav-item"><a href="professional.html" class="text">Professional Work</a></li>
+                    <li class="nav-item"><a href="contact.html" class="text">Contact</a></li>
+                </ul>
+            </div>
+        </nav> 
+        
+        <div class="row">
             <div id="main" class="col">
                 <h1 class="text">Professional History</h1>
 
                 <h2 class="text">Education</h2>
-                <dl>
+                <dl class="col-xl-12">
                     <dt><b class="text">Colorado School of Mines</b><span class="text">: Aug. 2012 - May 2015</span></dt>
                     <dd><span class="text">Bachelor's of Science in Computer Science, GPA 3.955, </span><i class="text">summa cum laude</i></dd>
 
@@ -52,7 +61,7 @@
                 </ul>
 
                 <h2 class="text">Relevant Work History</h2>
-                <dl>
+                <dl class="col-xl-12">
                     <dt class="text">Jul. 2014 - Dec. 2014: Consultant at Data Verity</dt>
                     <dd class="text">Created a new interface for Lon-Capa, the online homework system for the Physics department at Mines.</dd>
 
@@ -63,12 +72,12 @@
                     <dd class="text">Worked at Lockheed Martin through Solute, a military-focused consulting firm.</dd>
                 </dl>
 
-                <p class="text">
+                <!--p class="text">
                     It is worth noting that there are gaps in my history. Each of these was caused by my parents' cancers: I left Data Verity after my mother's 
                     cancer was found to be terminal (though I did continue my studies at Colorado School of Mines), and I left Solute, Inc. after my father died 
                     so that I could manage his estate and eventually move to Bozeman to be close to family. Frankly, I primarily took the time from May 2017, 
                     when my father died, to January 2019, when I resumed my graduate studies at Montana State University, to grieve and reassess my goals.
-                </p>
+                </p-->
 
                 <h2 class="text">Skills</h2>
                 <ul>
@@ -78,7 +87,7 @@
                 </ul>
 
                 <h2 class="text">Projects</h2>
-                <dl>
+                <dl class="col-xl-12">
                     <dt class="text">DeepACPpred</dt>
                     <dd class="text">
                         My Master's thesis project. I created a hybrid recurrent neural network(RNN) and convolutional neural network (CNN) system in Tensorflow 
@@ -108,7 +117,7 @@
                     <dd>&nbsp;</dd>
                 </dl>
             </div>
-        </div>
+        </div>     
     </div>
 
     <!-- Optional JavaScript -->

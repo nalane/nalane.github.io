@@ -15,18 +15,27 @@
 
 <body>
     <div class="container">
-        <div id="banner" class="row">
+        <div id="banner" class="row d-none d-md-block">
             <img src="image1.png" id="fst_image"></img>
         </div>
         
-        <div class="row">
-            <nav id="nav_bar" class="col-3">
-                <div class="row"><a href="/index.html" class="text">Home</a></div>
-                <div class="row"><a href="/bio.html" class="text">Bio</a></div>
-                <div class="row"><a href="/professional.html" class="text">Professional Work</a></div>
-                <div class="row"><a href="contact.html" class="text">Contact</a></div>
-            </nav> 
+        <nav id="nav_bar" class="row navbar-light navbar-expand-md">
+            <button class="navbar-toggler row" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!--span class="navbar-toggler-icon col-xs-1"></span-->
+                <img src="image1.png" id="fst_image" class="d-md-none col-xs-11"></img>
+            </button>
             
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item"><a href="index.html" class="text">Home</a></li>
+                    <li class="nav-item"><a href="bio.html" class="text">Bio</a></li>
+                    <li class="nav-item"><a href="professional.html" class="text">Professional Work</a></li>
+                    <li class="nav-item"><a href="contact.html" class="text">Contact</a></li>
+                </ul>
+            </div>
+        </nav> 
+        
+        <div class="row">          
             <div id="main" class="col">
                 <h1 class="text">Bio</h1>
                     <p>
@@ -51,41 +60,6 @@
                         to conduct anti-cancer research, which is very important to me. After graduating with my Master's in Spring 2020, I decided to
                         continue with my doctorate, which I am working on now.
                     </p>
-
-                    <h2 class="text">Other Interests</h2>
-                    <p>
-                        <span class="text">
-                            I have always had a love for theater and music. I performed in various plays throughout high school and college, and in 2014, 
-                            I directed a rendition of 
-                        </span>
-                        <i class="text">Angel Street,</i>
-                        <span class="text">
-                            which is one of my proudest achievements. I also play some guitar, but I've fallen out of practice a little.
-                        </span>
-                    </p>
-
-                    <p class="text">
-                        One of the best ways to get to know someone is to know what kinds of media they enjoy. Below are some of the things I've been
-                        interested in lately.
-                    </p>
-
-                    <p><b class="text">Some of the music I've been listening to</b></p>
-                    <ul>
-                        <li><i class="text">Fetch the Bolt Cutters</i><span class="text"> by Fiona Apple</span></li>
-                        <li><i class="text">Plastic Beach</i><span class="text"> by Gorillaz</span></li>
-                        <li><i class="text">Wish You Were Here</i><span class="text"> by Pink Floyd</span></li>
-                        <li><i class="text">Achtung Baby</i><span class="text"> by U2</span></li>
-                        <li><i class="text">Fenfo (Something to Say)</i><span class="text"> by Fatoumata Diawara</span></li>
-                    </ul>
-
-                    <p><b class="text">Some of the books I've been reading</b></p>
-                    <ul>
-                        <li><i class="text">A Beautifully Foolish Endeavor</i><span class="text"> by Hank Green</span></li>
-                        <li><i class="text">Axiom's End</i><span class="text"> by Lindsay Ellis</span></li>
-                        <li><i class="text">Norse Mythology</i><span class="text"> by Neil Gaiman</span></li>
-                        <li><i class="text">The Three-Body Problem</i><span class="text"> by Cixin Liu</span></li>
-                        <li><i class="text">The Big Short</i><span class="text"> by Michael Lewis</span></li>
-                    </ul>
             </div>
         </div>
     </div>

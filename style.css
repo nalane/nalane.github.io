@@ -21,7 +21,7 @@ body {
     text-align: center;
     border-top: 1px;
     border-left: 1px;
-    border-right: 0px;
+    border-right: 1px;
     border-bottom: 1px;
     border-color: black;
     border-style: solid;
@@ -53,4 +53,8 @@ body {
 
 .visible {
     z-index: 1;
+}
+
+img {
+    width: 100%;
 }

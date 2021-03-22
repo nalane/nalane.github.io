@@ -15,18 +15,27 @@
 
 <body>
     <div class="container">
-        <div id="banner" class="row">
+        <div id="banner" class="row d-none d-md-block">
             <img src="image1.png" id="fst_image"></img>
         </div>
         
-        <div class="row">
-            <nav id="nav_bar" class="col-3">
-                <div class="row"><a href="/index.html" class="text">Home</a></div>
-                <div class="row"><a href="/bio.html" class="text">Bio</a></div>
-                <div class="row"><a href="/professional.html" class="text">Professional Work</a></div>
-                <div class="row"><a href="contact.html" class="text">Contact</a></div>
-            </nav> 
+        <nav id="nav_bar" class="row navbar-light navbar-expand-md">
+            <button class="navbar-toggler row" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!--span class="navbar-toggler-icon col-xs-1"></span-->
+                <img src="image1.png" id="fst_image" class="d-md-none col-xs-11"></img>
+            </button>
             
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item"><a href="index.html" class="text">Home</a></li>
+                    <li class="nav-item"><a href="bio.html" class="text">Bio</a></li>
+                    <li class="nav-item"><a href="professional.html" class="text">Professional Work</a></li>
+                    <li class="nav-item"><a href="contact.html" class="text">Contact</a></li>
+                </ul>
+            </div>
+        </nav> 
+        
+        <div class="row">  
             <div id="main" class="col">
                 <h1 class="text">Nathaniel Lane</h1>
 
