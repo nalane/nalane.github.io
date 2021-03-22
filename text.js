@@ -37,7 +37,7 @@ function startTimer() {
         // Remove this element from the map.
         letters.delete(i);
         i++;
-    }, 3000);
+    }, 5000);
 }
 
 function animate(elem) {
