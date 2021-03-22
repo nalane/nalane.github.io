@@ -72,15 +72,8 @@ function animate(elem) {
             vel *= -0.25;
             bounces += 1;
             if (Math.abs(vel) <= 0.01 || bounces >= 5) {
-                console.log("Dropping");
                 clearInterval(animTimer);
             }
-            else {
-                console.log("Bouncing " + bounces);
-            }
-        }
-        else {
-            console.log(pos);
         }
 
         // Move it
