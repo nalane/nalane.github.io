@@ -16,6 +16,16 @@ body {
     border-style: solid;
 }
 
+#mobile_banner {
+    padding: 0;
+    margin-right: 8px;
+}
+
+#hamburger {
+    padding: 21px;
+    margin-left: 0px;
+}
+
 #nav_bar {
     background-color: #d1d1d1;
     text-align: center;
