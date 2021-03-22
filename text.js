@@ -58,22 +58,23 @@ function animate(elem) {
 
     // Give it a whimsical bump up.
     elem.setAttribute('vel', -mass / 200 * Math.random());
-
-    bounces = 0;
+    elem.setAttribute('bounces', 0);
 
     var animTimer = setInterval(function () {
         // Recalculate position
         const rect = elem.getBoundingClientRect();
         const pos = Number(window.innerHeight - rect.bottom);
+        const bounces = Number(elem.getAttribute('bounces'));
         vel = Number(elem.getAttribute('vel'));
+
+        if (bounces >= 5) {
+            clearInterval(animTimer);
+        }
 
         // If it hits the bottom of the screen, bounce or end
         if (pos <= 0.001) {
-            vel *= -0.25;
-            bounces += 1;
-            if (Math.abs(vel) <= 0.01 || bounces >= 5) {
-                clearInterval(animTimer);
-            }
+            vel *= -0.35;
+            elem.setAttribute('bounces', bounces + 1);
         }
 
         // Move it
