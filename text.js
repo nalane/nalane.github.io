@@ -73,7 +73,7 @@ function animate(elem) {
 
         // If it hits the bottom of the screen, bounce or end
         if (pos <= 0.001) {
-            vel *= -0.35;
+            vel *= -0.25;
             elem.setAttribute('bounces', bounces + 1);
         }
 
